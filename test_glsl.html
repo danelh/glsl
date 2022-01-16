@@ -49,7 +49,7 @@ function record(canvas, time) {
 }
 
 var canvas = document.getElementById("my_canvas");
-var stream = canvas.captureStream(25 /*fps*/);
+var stream = canvas.captureStream(60 /*fps*/);
 var recordedChunks = [];
 mediaRecorder = new MediaRecorder(stream, {
             mimeType: "video/webm; codecs=vp9"
